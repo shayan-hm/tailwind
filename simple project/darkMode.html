@@ -6,8 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>dark mode</title>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
   </head>
-  <body>
-    <div class="bg-slate-600 border">jjjjjjjj</div>
+  <body class="dark:bg-gray-200">
+    <div
+      class="dark:bg-slate-800 bg-white border text-white rounded-2xl sm:m-1 md:m-2 lg:m-4 xl:m-6 2xl:m-16 p-10"
+    >
+      <h1 class="py-10 font-semibold text-2xl text-black dark:text-white">
+        Lorem, ipsum dolor.
+      </h1>
+      <p class="dark:text-gray-400 text-black">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo
+        deleniti odit saepe iste! Et, necessitatibus iure! Voluptate debitis
+        obcaecati aliquam, ratione sunt inventore voluptatum quia sed quod vel
+        quis!
+      </p>
+    </div>
+    <label class="flex items-center cursor-pointer">
+      <input type="checkbox" class="hidden" id="toggleSwitch" />
+      <div class="relative">
+        <div class="bg-gray-400 dark:bg-green-400 w-14 h-8 rounded-full"></div>
+        <div
+          class="dot absolute left-1 dark:left-7 top-1 bg-white w-6 h-6 rounded-full transition"
+        ></div>
+      </div>
+    </label>
+    <script>
+      let btn = document.getElementById("toggleSwitch");
+      btn.addEventListener("click", function () {
+        document.documentElement.classList.toggle("dark");
+      });
+    </script>
   </body>
 </html>
