@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="h-screen flex justify-center items-center bg-slate-500">
+      <div class="p-2 rounded-2xl bg-slate-800 mx-4">
+        <div class="flex flex-col sm:flex-row">
+          <!--image-->
+          <img
+            src="../../all-project-assets/email-subscribe/images/image.jpg"
+            alt=""
+            class="h-80 sm:h-72 rounded w-auto sm:w-80"
+          />
+          <!--content-->
+          <div
+            class="flex flex-col justify-center sm:justify-between items-center sm:items-start text-center sm:text-left font-serif p-7 space-y-8 sm:space-y-0"
+          >
+            <div class="w-full">
+              <h1 class="text-white font-bold text-[20px]">
+                Lorem ipsum dolor sit amet consectetur.
+              </h1>
+            </div>
+            <div>
+              <p class="text-white text-[15px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate saepe ad amet in!
+              </p>
+            </div>
+            <div class="w-full flex justify-between">
+              <input
+                class="text-white w-full sm:w-[75%] border-2 border-gray-500/50 text-center rounded"
+                type="text"
+                placeholder="enter your email"
+              />
+              <button
+                class="border rounded bg-green-400 text-white px-6 py-2 hidden sm:inline-block"
+              >
+                subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
