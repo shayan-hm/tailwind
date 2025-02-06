@@ -7,14 +7,14 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
     <style>
-      .custom-gradient {
+      .background-gradient {
         background: linear-gradient(
           107.96deg,
           rgba(138, 119, 189, 0.5148) 1.32%,
           rgba(65, 0, 129, 0.7176) 92.54%
         );
       }
-      .gradient-background {
+      .coustom-background {
         background: linear-gradient(
           92.48deg,
           rgba(255, 255, 255, 0.2576) -4.13%,
@@ -26,11 +26,12 @@
   <body>
     <!--background-->
     <div
-      class="custom-gradient h-screen w-full flex items-center justify-evenly"
+      class="background-gradient h-screen w-full flex items-center justify-evenly"
     >
       <!--container-->
       <div class="p-3 w-full sm:w-[85%] flex justify-evenly">
         <!--left side-->
+        <!--add on large screen-->
         <div
           class="md:flex flex-col items-center justify-between hidden max-w-90"
         >
@@ -48,13 +49,14 @@
 
         <!--right side-->
         <div class="z-20">
+          <!--tittle add on medium screen-->
           <p
             class="text-center font-bold tracking-[1.5rem] mb-16 block md:hidden"
           >
             EXINESS
           </p>
           <div
-            class="shadow-2xl rounded-3xl text-center p-12 pb-16 gradient-background"
+            class="shadow-2xl rounded-3xl text-center p-12 pb-16 coustom-background"
           >
             <p class="text-white mb-10 font-semibold" for="">
               .به اکسینس خوش آمدید
@@ -95,6 +97,7 @@
         </div>
       </div>
     </div>
+    <!--image add on medium screen-->
     <img
       src="../../all-project-assets/login & signUp/freepik--Plant--inject-15.png"
       alt=""
