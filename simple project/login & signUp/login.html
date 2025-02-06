@@ -21,6 +21,11 @@
           rgba(97, 71, 168, 0.46) 107.9%
         );
       }
+      @media (max-width: 480px) {
+        .custom-responsive {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -48,7 +53,7 @@
         </div>
 
         <!--right side-->
-        <div class="z-20">
+        <div class="z-20 relative">
           <!--tittle add on medium screen-->
           <p
             class="text-center font-bold tracking-[1.5rem] mb-16 block md:hidden"
@@ -94,14 +99,14 @@
               ></span
             >
           </div>
+          <!--image add on 480px - 780px -->
+          <img
+            src="../../all-project-assets/login & signUp/freepik--Plant--inject-15.png"
+            alt=""
+            class="absolute top-75 right-80 z-0 custom-responsive md:hidden"
+          />
         </div>
       </div>
     </div>
-    <!--image add on medium screen-->
-    <img
-      src="../../all-project-assets/login & signUp/freepik--Plant--inject-15.png"
-      alt=""
-      class="absolute top-85 left-5 md:hidden z-0"
-    />
   </body>
 </html>
