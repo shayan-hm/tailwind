@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+      .background-gradient {
+        background: rgb(97, 71, 168);
+        background: linear-gradient(
+          61deg,
+          rgba(97, 71, 168, 0.6111694677871149) 0%,
+          rgba(97, 71, 168, 1) 98%
+        );
+      }
+      .coustom-background {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.3982843137254902) 0%,
+          rgba(97, 71, 168, 1) 100%
+        );
+      }
+      @media (max-width: 480px) {
+        .custom-responsive {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--background-->
+    <div
+      class="background-gradient h-screen w-full flex items-center justify-evenly"
+    >
+      <!--container-->
+      <div class="p-3 w-full sm:w-[85%] flex justify-evenly">
+        <!--left side-->
+        <!--add on large screen-->
+        <div
+          class="md:flex flex-col items-center justify-between hidden max-w-90"
+        >
+          <p
+            class="text-center font-extrabold text-2xl tracking-[2rem] mb-16 block"
+          >
+            EXINESS
+          </p>
+          <img
+            src="../../all-project-assets/login & signUp/Group 175.png"
+            alt=""
+            class="w-full h-[70%] object-cover"
+          />
+        </div>
+
+        <!--right side-->
+        <div class="z-20 relative">
+          <!--tittle add on medium screen-->
+          <p
+            class="text-center font-bold tracking-[1.5rem] mb-16 block md:hidden"
+          >
+            EXINESS
+          </p>
+          <div
+            class="shadow-2xl rounded-3xl text-center pt-16 pb-12 px-14 coustom-background"
+          >
+            <form class="">
+              <input
+                type="text"
+                placeholder="نام"
+                class="border-[1px] border-white rounded-xl p-1 text-right mb-3 block placeholder:text-white placeholder:text-xs"
+              />
+              <input
+                type="text"
+                placeholder="نام خانوادگی"
+                class="border-[1px] border-white rounded-xl p-1 text-right mb-3 block placeholder:text-white placeholder:text-xs"
+              />
+              <input
+                type="email"
+                placeholder="ایمیل"
+                class="border-[1px] border-white rounded-xl p-1 text-right mb-3 block placeholder:text-white placeholder:text-xs"
+              />
+              <input
+                type="number"
+                placeholder="شماره همراه"
+                class="border-[1px] border-white rounded-xl p-1 text-right mb-3 block placeholder:text-white placeholder:text-xs"
+              />
+              <input
+                type="text"
+                placeholder="نام کاربری"
+                class="border-[1px] border-white rounded-xl p-1 text-right mb-3 block placeholder:text-white placeholder:text-xs"
+              />
+
+              <input
+                type="password"
+                placeholder="رمز عبور"
+                class="border-[1px] border-white rounded-xl p-1 text-right mb-3 block placeholder:text-white placeholder:text-xs"
+              />
+
+              <label class="text-white text-xs m-1" for="chb"
+                >با شرایط و قوانین اکسینس موافق هستم</label
+              ><input type="checkbox" name="" id="chb" /> <br /><br />
+              <input
+                type="button"
+                value="ثبت نام"
+                class="text-[#410081] font-bold text-xl rounded-2xl px-17 pb-1.5 bg-white"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
