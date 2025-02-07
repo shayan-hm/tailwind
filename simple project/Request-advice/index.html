@@ -21,7 +21,7 @@
     <div class="custom-bg flex items-center justify-center w-full h-screen">
       <!--main container-->
       <div
-        class="w-[95%] sm:w-[90%] md:w-[85%] 2xl:h-[65vh] xl:h-[70vh] lg:h-[75hv] md:h-[80vh] sm:h-[85vh] h-[95vh] border border-black/20 flex flex-col items-end justify-around"
+        class="w-[95%] sm:w-[90%] md:w-[85%] 2xl:h-[65vh] xl:h-[70vh] lg:h-[75hv] md:h-[80vh] sm:h-[85vh] h-[95vh] border border-black/2 rounded-2xl flex flex-col items-end justify-around z-20 relative"
       >
         <p class="text-2xl font-semibold text-right">
           درخواست مشاوره <span class="text-[#6147A8]">اکسینس</span>
@@ -36,7 +36,7 @@
           name=""
           id=""
           placeholder="...عنوان درخواست شما"
-          class="border border-white h-[10%] w-[50%] rounded-xl bg-[#6147A810] placeholder:text-right text-right"
+          class="border border-white/65 h-[10%] w-[50%] rounded-xl bg-[#beb2da70] placeholder:text-right text-right z-20"
         />
 
         <input
@@ -44,13 +44,19 @@
           name=""
           id=""
           placeholder="... متن درخواست شما"
-          class="border border-white h-[40%] w-full rounded-xl bg-[#6147A810] placeholder:text-right text-right"
+          class="border border-white/65 h-[40%] w-full rounded-xl bg-[#beb2da60] placeholder:text-right text-right z-20"
         />
 
         <input
           type="submit"
           value="ثبت درخواست"
           class="px-10 py-4 rounded-4xl bg-[#6147A8] text-white font-bold"
+        />
+
+        <img
+          src="../../all-project-assets/Group 175.png"
+          alt=""
+          class="absolute top-[35vh] sm:top-[30vh] xl:top-[19vh] 2xl:top-[17vh] z-0 left-0 w-20"
         />
       </div>
     </div>
